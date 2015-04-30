@@ -309,7 +309,6 @@ def redirect_to_prev_questionnaire(request):
     return HttpResponseRedirect('/')
 
 
-@transaction.commit_on_success
 def questionnaire(request, runcode=None, qs=None):
     """
     Process submit answers (if present) and redirect to next page
